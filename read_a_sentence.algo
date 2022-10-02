@@ -1,0 +1,16 @@
+ALGORITHM read_a_sentence
+VAR
+    a,b,c,Phrase: STRING
+    longueur: INTEGER
+BEGIN
+    a:= <<Une>>;
+    b:= <<phrase>>;
+    c:= <<.>>;
+    Read(a)
+    Read(b)
+    Read(c)
+    Phrase:= a + b + c ;
+    Read(Phrase)
+    longueur:= length(phrase)
+    Write(<<Votre phrase contient>>,longueur,<<caractères>>)
+END
